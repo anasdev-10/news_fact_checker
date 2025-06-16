@@ -16,7 +16,6 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 
    ```
    git clone https://github.com/Anas039/news-fact-checker.git
-   cd news-fact-checker
    ```
 
 2. Create a virtual environment and install dependencies:
@@ -55,8 +54,6 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 - Ensure you stay within your Gemini API quota limits.
 - For production deployment, secure your API keys and consider moving them to environment variables.
 
-## License
 
-MIT License
 
 
