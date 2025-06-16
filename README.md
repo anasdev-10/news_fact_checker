@@ -15,7 +15,7 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 1. Clone this repository:
 
    ```
-   git clone https://github.com/Anas039/news-fact-checker.git
+   git clone https://github.com/Anas039/news_fact_checker.git
    ```
 
 2. Create a virtual environment and install dependencies:
