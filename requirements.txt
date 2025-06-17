@@ -1,0 +1,8 @@
+flask requests  
+newspaper3k 
+python-dotenv
+google-generativeai
+transformers sentencepiece tqdm 
+"lxml[html_clean]"
+
+
