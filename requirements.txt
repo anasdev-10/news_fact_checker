@@ -1,8 +1,13 @@
-flask requests  
-newspaper3k 
+Flask
+transformers
+torch
+sentencepiece
+tqdm
+requests
+openai
+google-api-python-client
 python-dotenv
+lxml[html_clean]
 google-generativeai
-transformers sentencepiece tqdm 
-"lxml[html_clean]"
 
 
