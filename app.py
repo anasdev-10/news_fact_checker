@@ -39,6 +39,6 @@ def home():
     return render_template('index.html', articles=articles, fact_verdict=fact_verdict, fact_evidence=fact_evidence)
 
 if __name__ == '__main__':
-    """Run the Flask app."""
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 7860))
+    app.run(debug=True, host="0.0.0.0", port=port)
 
