@@ -10,7 +10,7 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 - Allows users to manually enter any claim or article and check its factual correctness
 - Displays real-time verdict and supporting evidence
 
-## Setup Instructions
+## Setup Instructions (Local)
 
 1. Clone this repository:
 
@@ -30,7 +30,8 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 
    - Get your NewsAPI key from https://newsapi.org
    - Get your Gemini API key from https://makersuite.google.com/app/apikey
-   - Create a `.env` file or edit your Python files to store them securely
+   - Get your Google Custom Search API key and CSE ID from https://programmablesearchengine.google.com/
+   - Create a `.env` file in the `news_fact_checker` directory (see `.env.example` for required variables)
 
 4. Run the app:
 
@@ -39,6 +40,22 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
    ```
 
 5. Open `http://127.0.0.1:5000/` in your browser.
+
+## Hugging Face Spaces Deployment
+
+1. **Create a new Space** on [Hugging Face Spaces](https://huggingface.co/spaces) and select the "Flask" SDK.
+2. **Upload all project files** (except your real `.env` file) to the Space.
+3. **Set your API keys as Secrets** in the Space settings:
+   - Go to your Space > Settings > Secrets.
+   - Add the following secrets:
+     - `NEWS_API_KEY`
+     - `GEMINI_API_KEY`
+     - `GOOGLE_API_KEY`
+     - `GOOGLE_CSE_ID`
+     - `FLASK_SECRET_KEY`
+   - **Never upload your real `.env` file or API keys to the repository.**
+4. **Ensure your `requirements.txt` is up to date** with all dependencies.
+5. The Space will automatically run `app.py` as the entry point.
 
 ## Project Structure
 
@@ -52,7 +69,8 @@ A Flask-based web app that fetches the latest news, summarizes the content, and 
 ## Notes
 
 - Ensure you stay within your Gemini API quota limits.
-- For production deployment, secure your API keys and consider moving them to environment variables.
+- For production deployment, secure your API keys using environment variables or Hugging Face Secrets.
+- For local development, use a `.env` file (never commit this file to public repos).
 
 
 

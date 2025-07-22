@@ -4,10 +4,10 @@ torch
 sentencepiece
 tqdm
 requests
-openai
 google-api-python-client
 python-dotenv
 lxml[html_clean]
 google-generativeai
+newspaper3k
 
 
